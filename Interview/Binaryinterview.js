@@ -87,24 +87,24 @@
 
 // ================================== solution 3 ===========================================
 
-function firstInt(arr){
-    let left = 0
-    let right = arr.length - 1
-    while(left<= right){
-        let mid = Math.floor(left + (right - left)/2)
-        console.log(mid)
+// function firstInt(arr){
+//     let left = 0
+//     let right = arr.length - 1
+//     while(left<= right){
+//         let mid = Math.floor(left + (right - left)/2)
+//         console.log(mid)
 
-        if(arr[mid] === 1){
-            right = mid - 1
-        }
-        if(arr[mid] === 0){
-            left = mid + 1
-        }
-    }
-    return left
-}
+//         if(arr[mid] === 1){
+//             right = mid - 1
+//         }
+//         if(arr[mid] === 0){
+//             left = mid + 1
+//         }
+//     }
+//     return left
+// }
 
 
 
-const arr = [0,1,1,1,1,1]
-console.log(firstInt(arr))
+// const arr = [0,1,1,1,1,1]
+// console.log(firstInt(arr))
